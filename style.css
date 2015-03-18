@@ -1,0 +1,27 @@
+body {
+    background-color: #DADADA;
+}
+
+#body{
+    width: 675px;
+    margin: 0 auto;
+    padding: 75px;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400; 
+	text-align: center;
+	font-size: 4em;
+	color: #31322C;
+}
+.hover-expand{
+	color: #939685;
+	overflow: visible !important;
+
+}
+#image_container{
+	width:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
