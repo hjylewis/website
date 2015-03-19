@@ -1,4 +1,4 @@
-$(document).mouseup(function (e)
+$(document).mousedown(function (e)
 {
 	var clicked_image = false;
 
