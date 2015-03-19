@@ -8,10 +8,27 @@
 
 	<body>
 		<div id="body">
-			<h1><span class="head-hover" id="h">h<span class='hover-expand' id='h-expand' hidden>enry</span></span><span class="head-hover" id="j">j<span class='hover-expand' id='j-expand' hidden>ohn</span></span><span class="head-hover" id="y">y<span class='hover-expand' id='y-expand' hidden>ing</span></span>lewis</h1>
-			<div id="image_container">
-				<img id='github' src='images/github.gif' height="100" width="100"/>
-				<img id='email' src='images/email_circle3.png' height="100" width="100"/>
+			<h1><span class="name-hover" id="h">h<span class='hover-expand' id='h-expand' hidden>enry</span></span><span class="name-hover" id="j">j<span class='hover-expand' id='j-expand' hidden>ohn</span></span><span class="name-hover" id="y">y<span class='hover-expand' id='y-expand' hidden>ing</span></span>lewis</h1>
+			<div id="image_container" clicked='false'>
+				<div class="image-hover" id="Github">
+					<img class='image' id='back' src='images/back_trans.png' height="100" width="100" />
+					<!-- <a href="https://github.com/hjylewis"><img class='image' id='github' src='images/github.gif' height="100" width="100"/></a> -->
+					<img class='image' id='github' src='images/github.gif' height="100" width="100"/>
+				</div>
+				<div class="image-hover" id="Email">
+					<img class='image back' id='back' src='images/back_trans.png' height="100" width="100" />
+					<!-- <a href="mailto:hlewis@uchicago.edu"><img class='image' id='email' src='images/email_circle3.png' height="100" width="100"/></a> -->
+					<img class='image' id='email' src='images/email_circle3.png' height="100" width="100"/>
+				</div>
+				<div class="image-hover" id="Portfolio">
+					<img class='image back' id='back' src='images/back_trans.png' height="100" width="100" />
+					<!-- <a href="resume.pdf"><img class='image' id='page' src='images/page_trans.png' height="100" width="100"/></a> -->
+					<img class='image' id='page' src='images/page_trans.png' height="100" width="100"/>
+				</div>
+			</div>
+			<div id="text_container">
+				<h2></h2>
+				<div id="text_body" ></div>
 			</div>
 
 		</div>

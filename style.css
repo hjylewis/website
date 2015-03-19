@@ -15,6 +15,33 @@ h1{
 	font-size: 4em;
 	color: #31322C;
 }
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400; 
+	text-align: center;
+	margin: 5px;
+	font-size: 2em;
+	color: #31322C;
+}
+#text_container{
+	width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#text_body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400; 
+	text-align: center;
+	font-size: 1em;
+	color: #31322C;
+	margin: 10px;
+}
+
 .hover-expand{
 	color: #939685;
 	overflow: visible !important;
@@ -22,6 +49,42 @@ h1{
 }
 #image_container{
 	width:300px;
+	height: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image{
+	float:left;
+	position: absolute;
+}
+
+.back{
+	left: 100px;
+	position: relative;
+}
+
+#back{
+	visibility: hidden;
+}
+
+a:link {
+	color: #31322C;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #31322C;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #CA0005;
+    text-decoration: underline;
+}
+
+a:active {
+	color: #CA0005;
+	
+    text-decoration: underline;
 }
