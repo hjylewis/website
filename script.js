@@ -23,7 +23,7 @@ $(document).mousedown(function (e)
 						$("#text_body").html("<a href='mailto:hlewis@uchicago.edu'>hlewis@uchicago.edu</a>");
 						break;
 					case 'Portfolio':
-						$("#text_body").html("<a href='http://issue-graph.markitx.com/'>Issue Graph</a>");
+						$("#text_body").html("<a href='http://toadfish.xyz/'>Toadfish</a><br /><a href='http://issue-graph.markitx.com/'>Issue Graph</a>");
 						break;
 				}
 			}
