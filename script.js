@@ -23,9 +23,7 @@ $(document).mousedown(function (e)
 						$("#text_body").html("<a href='mailto:hlewis@uchicago.edu'>hlewis@uchicago.edu</a>");
 						break;
 					case 'Portfolio':
-						$("#text_body").html("<a href='http://toadfish.xyz/'>Toadfish</a><br />
-							<a href='http://issue-graph.markitx.com/'>Issue Graph</a><br />
-							<a href='http://blog.publicgood.com/post/127266095525/henrys-last-stand'>Blog Post</a>");
+						$("#text_body").html("<a href='http://toadfish.xyz/'>Toadfish</a><br /><a href='http://issue-graph.markitx.com/'>Issue Graph</a><br /><a href='http://blog.publicgood.com/post/127266095525/henrys-last-stand'>Blog Post</a>");
 						break;
 				}
 			}
