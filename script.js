@@ -1,5 +1,5 @@
-$(document).mousedown(function (e)
-{
+// When click on page...
+$(document).mousedown(function (e) {
 	var clicked_image = false;
 
 	if (!$("#text_container").is(e.target) && $("#text_container").has(e.target).length === 0){
@@ -36,6 +36,7 @@ $(document).mousedown(function (e)
 	}
 });
 
+// Cool name hover
 $(".name-hover").hover(
 	function () {
 		var id = $( this ).attr("id") + '-expand';
@@ -45,6 +46,7 @@ $(".name-hover").hover(
 		$( "#"+id ).stop().animate({width: 'toggle', opacity: 'toggle'}).css('overflow', 'visible');
 	});
 
+// When icon is hovered, add 'hovered' class and change Title text
 $(".image-hover").hover(
 	function () {
 		if ($( this ).parent().attr("clicked") == 'false') {
@@ -59,13 +61,14 @@ $(".image-hover").hover(
 
 function highlight_image (obj) {
 	var text = $( obj ).attr('id');
-	$( obj ).find("#back").css("visibility", "visible");
+	$( obj ).addClass("hovered");
 	$("#text_container").find("h2").text(text);
 }
 
 function dehighlight_image (obj) {
-	$( obj ).find("#back").css("visibility", "hidden");
+	$( obj ).removeClass("hovered");
 }
+
 function clear_text () {
 	$("#text_container").find("h2").text("");
 	$("#text_body").text("");

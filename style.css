@@ -10,7 +10,7 @@ body {
 
 h1{
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400; 
+	font-weight: 400;
 	text-align: center;
 	font-size: 4em;
 	color: #31322C;
@@ -18,7 +18,7 @@ h1{
 
 h2{
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400; 
+	font-weight: 400;
 	text-align: center;
 	margin: 5px;
 	font-size: 2em;
@@ -35,7 +35,7 @@ h2{
 
 #text_body{
 	font-family: 'Raleway', sans-serif;
-	font-weight: 400; 
+	font-weight: 400;
 	text-align: center;
 	font-size: 1em;
 	color: #31322C;
@@ -45,27 +45,45 @@ h2{
 .hover-expand{
 	color: #939685;
 	overflow: visible !important;
-
 }
 #image_container{
-	width:300px;
+	width:308px;
 	height: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.image{
-	float:left;
-	position: absolute;
+.image-hover {
+    position: relative;
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 30px;
 }
 
-.back{
-	left: 100px;
-	position: relative;
+.hovered {
+    background: rgb(196, 196, 196);
 }
 
-#back{
-	visibility: hidden;
+.fa-github {
+    font-size: 100px;
+}
+
+.fa-circle-thin {
+    font-size: 100px;
+}
+
+.fa-envelope {
+    font-size: 56px;
+    top: 20px;
+    position: absolute;
+    left: 22px;
+}
+
+.fa-align-justify {
+    position: absolute;
+    top: 26px;
+    font-size: 52px;
+    left: 24px;
 }
 
 a:link {
@@ -85,6 +103,6 @@ a:hover {
 
 a:active {
 	color: #CA0005;
-	
+
     text-decoration: underline;
 }
