@@ -51,7 +51,7 @@ h2{
 	overflow: visible !important;
 }
 #image_container{
-	width:308px;
+	width:411px;
 	height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -84,6 +84,13 @@ h2{
 }
 
 .fa-align-justify {
+    position: absolute;
+    top: 26px;
+    font-size: 52px;
+    left: 24px;
+}
+
+.fa-video-camera {
     position: absolute;
     top: 26px;
     font-size: 52px;

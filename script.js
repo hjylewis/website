@@ -28,6 +28,10 @@ $(document).mousedown(function (e) {
 						<a href='http://issue-graph.markitx.com/'>Issue Graph</a><br />
 						<a href='http://blog.publicgood.com/post/127266095525/henrys-last-stand'>Blog Post</a>`);
 						break;
+					case 'Film':
+						$("#text_body").html(`<a href='https://vimeo.com/124357980'>Siu Yeh</a><br />
+						<a href='https://vimeo.com/124984765'>The Gold Team</a>`);
+						break;
 				}
 			}
 		})
