@@ -1,5 +1,6 @@
 body {
-    background-color: #DADADA;
+    background-color: #F2F2F2;
+    color: #060C11;
 }
 
 #body{
@@ -13,7 +14,6 @@ h1{
 	font-weight: 400;
 	text-align: center;
 	font-size: 4em;
-	color: #31322C;
 }
 
 h2{
@@ -22,9 +22,8 @@ h2{
 	text-align: center;
 	margin: 5px;
 	font-size: 2em;
-	color: #31322C;
 }
-#text_container{
+#text_container {
 	width: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -33,12 +32,16 @@ h2{
     padding: 10px 20px;
 }
 
+#text_container.selected {
+  border: solid #0C1821;
+}
+
 #text_body{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	text-align: center;
 	font-size: 1em;
-	color: #31322C;
+	color: #0C1821;
 	margin: 10px;
 }
 
@@ -47,7 +50,7 @@ h2{
 }
 
 .hover-expand{
-	color: #939685;
+	color: #CA0005;
 	overflow: visible !important;
 }
 #image_container{
@@ -65,7 +68,8 @@ h2{
 }
 
 .hovered {
-    background: rgb(196, 196, 196);
+    background: #0C1821;
+    color: #F2F2F2;
 }
 
 .fa-github {

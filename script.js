@@ -9,8 +9,6 @@ $(document).mousedown(function (e) {
 
 			} else {
 				$( this ).parent().attr("clicked",true)
-				$( "#text_container" ).css("background-color","#C4C4C4");
-
 
 				var id = $( this ).attr('id');
 				highlight_image( this )
@@ -37,7 +35,6 @@ $(document).mousedown(function (e) {
 		})
 		if (!clicked_image) {
 			$( "#image_container" ).attr("clicked",false)
-			$( "#text_container" ).css("background-color","");
 			clear_text();
 		}
 	}
@@ -70,6 +67,7 @@ function highlight_image (obj) {
 	var text = $( obj ).attr('id');
 	$( obj ).addClass("hovered");
 	$("#text_container").find("h2").text(text);
+	$("#text_container").addClass("selected");
 }
 
 function dehighlight_image (obj) {
@@ -79,4 +77,5 @@ function dehighlight_image (obj) {
 function clear_text () {
 	$("#text_container").find("h2").text("");
 	$("#text_body").text("");
+	$("#text_container").removeClass("selected");
 }
