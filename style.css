@@ -1,123 +1,36 @@
 body {
-    background-color: #F2F2F2;
-    color: #060C11;
+    margin: 0;
 }
 
-#body{
-    width: 675px;
-    margin: 0 auto;
-    padding: 75px;
-}
-
-h1{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	font-size: 4em;
-}
-
-h2{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	margin: 5px;
-	font-size: 2em;
-}
-#text_container {
-	width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 10px 20px;
-}
-
-#text_container.selected {
-  border: solid #0C1821;
-}
-
-#text_body{
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	font-size: 1em;
-	color: #0C1821;
-	margin: 10px;
-}
-
-.clickable {
-    cursor: pointer;
-}
-
-.hover-expand{
-	color: #CA0005;
-	overflow: visible !important;
-}
-#image_container{
-	width:411px;
-	height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image-hover {
-    position: relative;
-    display: inline-block;
-    padding: 1px 7px;
-    border-radius: 30px;
-}
-
-.hovered {
-    background: #0C1821;
-    color: #F2F2F2;
-}
-
-.fa-github {
-    font-size: 100px;
-}
-
-.fa-circle-thin {
-    font-size: 100px;
-}
-
-.fa-envelope {
-    font-size: 56px;
-    top: 20px;
+body:before {
+    content: "";
     position: absolute;
-    left: 22px;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    background: no-repeat right top;
+    background-size: auto 159%;
 }
 
-.fa-align-justify {
-    position: absolute;
-    top: 26px;
-    font-size: 52px;
-    left: 24px;
+.teal {
+    background-color: #9ef4d7;
+}
+.teal:before {
+    background-image: url("/images/teal-blue-chill.png");
 }
 
-.fa-video-camera {
-    position: absolute;
-    top: 26px;
-    font-size: 52px;
-    left: 24px;
+.blue {
+    background-color: #7bbfd8;
+}
+.blue:before {
+    background-image: url("/images/maroon-light-blue.png");
 }
 
-a:link {
-	color: #31322C;
-    text-decoration: none;
+.red {
+    background-color: #ff5d68;
 }
-
-a:visited {
-	color: #31322C;
-    text-decoration: none;
-}
-
-a:hover {
-	color: #CA0005;
-    text-decoration: underline;
-}
-
-a:active {
-	color: #CA0005;
-
-    text-decoration: underline;
+.red:before {
+    background-image: url("/images/blue-red-chill.png");
 }
