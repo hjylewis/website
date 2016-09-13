@@ -2,10 +2,25 @@
 	<head>
 		<title>Henry Lewis</title>
 		<link rel="shortcut icon" href="favicon.ico" />
-		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css" / />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
-	<body class="blue">
+	<body>
+		<div class="content">
+			<h1>I'm Henry</h1>
+			<ul>
+				<li><a href="mailto:henry.jy.lewis@gmail.com">email</a></li>
+				<li><a href="https://github.com/hjylewis" target="_blank">github</a></li>
+				<li><a href="">portforlio</a></li>
+			</ul>
+		</div>
 	</body>
+
+	<script>
+		var themes = ["blue", "red"];
+		var rand = Math.round(Math.random() * (themes.length - 1));
+		document.body.className = themes[rand];
+	</script>
 </html>
