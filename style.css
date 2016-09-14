@@ -27,16 +27,41 @@ h1 {
     color: #fdfdfd;
 }
 
-.content ul {
+ul {
     list-style: none;
     padding-left: 3px;
     font-size: 30px;
 }
 
+ul ul {
+    list-style: initial;
+    padding-left: 30px;
+    list-style-position: inside;
+    font-size: 19px;
+}
 
+.subtitle {
+    font-style: italic;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.show-on-hover {
+    display: none;
+}
+
+li:hover > .show-on-hover {
+    display: initial;
+}
+
+.hint {
+    font-size: 12px;
+}
+
+/* BACKGROUND*/
 body:before {
     content: "";
-    position: absolute;
+    position: fixed;
     z-index: -1;
 
     height: 100%;
