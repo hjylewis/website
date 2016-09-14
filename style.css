@@ -58,6 +58,11 @@ li:hover > .show-on-hover {
     font-size: 12px;
 }
 
+.home-link {
+    position: absolute;
+    padding-left: 3px;
+}
+
 /* BACKGROUND*/
 body:before {
     content: "";
@@ -99,4 +104,34 @@ body:before {
 }
 .pink:before {
     background-image: url("/images/pink.png");
+}
+
+@media screen and (max-width: 785px) {
+    body:before {
+        background-position: left top;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    body:before {
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
