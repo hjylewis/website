@@ -37,21 +37,22 @@
 			<h1>experience</h1>
 			<ul>
 				<li><a href="https://www.biodigital.com/" target="_blank">biodigital</a><span class="subtitle show-on-hover"> - Frontend Developer</span>
-					<ul>
-						<li>
-							somehting
-						</li>
-					</ul>
+					<!-- <ul>
+						<li>Led development on two major UI overhauls including the flagship web app and developer portal.</li>
+						<li>Researched and implemented 3D asset caching using the Service Worker API and IndexedDB which cut loading times by a third.</li>
+					</ul> -->
 				</li>
-				<li><a href="https://publicgood.com/" target="_blank">public good</a><span class="subtitle show-on-hover"> - Full-Stack Developer</span></li>
-				<li><a href="http://www.markitx.com/" target="_blank">markitx</a><span class="subtitle show-on-hover"> - Software Developer</span></li>
+				<li><a href="https://publicgood.com/" target="_blank">public good</a><span class="subtitle show-on-hover"> - Full-Stack Developer</span>
+				</li>
+				<li><a href="http://www.markitx.com/" target="_blank">markitx</a><span class="subtitle show-on-hover"> - Software Developer</span>
+				</li>
 			</ul>
 		</div>
 	</body>
 
 	<script>
 		var themes = ["blue", "red"];
-		var rand = Math.round(Math.random() * (themes.length - 1));
+		var rand = Math.floor(Math.random() * themes.length);
 		document.body.className = themes[rand];
 	</script>
 

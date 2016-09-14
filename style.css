@@ -47,11 +47,11 @@ ul ul {
 }
 
 .show-on-hover {
-    display: none;
+    opacity: 0;
 }
 
 li:hover > .show-on-hover {
-    display: initial;
+    opacity: 1;
 }
 
 .hint {
