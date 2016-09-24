@@ -112,6 +112,12 @@ body:before {
     }
 }
 
+@media screen and (max-width: 640px) {
+    .show-on-hover {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 50px;
