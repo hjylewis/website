@@ -1,48 +1,56 @@
+html {
+  font: 1em/1.5 "Raleway", "Helvetica", "Arial";
+  color: #fdfdfd;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr{
+    margin-bottom:1.5rem;
+}
+
 body {
     margin: 0;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active {
     text-decoration: underline;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 75px;
-
-    margin-bottom: 30px;
+    font-size: 4.6em;
 }
 
 .content {
     height: 100%;
     box-sizing: border-box;
     padding: 100px;
-
-    font-family: "Raleway", "Helvetica", "Arial";
-    color: #fdfdfd;
 }
 
 ul {
     list-style: none;
     padding-left: 3px;
-    font-size: 30px;
+    font-size: 1.9em;
 }
 
-ul ul {
-    list-style: initial;
-    padding-left: 30px;
-    list-style-position: inside;
-    font-size: 19px;
+li {
+  line-height: 1.2;
 }
 
 .subtitle {
     font-style: italic;
-    font-size: 20px;
+    font-size: 0.7em;
     vertical-align: middle;
 }
 
@@ -55,7 +63,7 @@ li:hover > .show-on-hover {
 }
 
 .hint {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .home-link {
@@ -125,7 +133,7 @@ body:before {
 
 @media screen and (max-width: 600px) {
     h1 {
-        font-size: 50px;
+      font-size: 3.1em;
     }
 
     body:before {
