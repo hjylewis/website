@@ -1,3 +1,5 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
+'use strict';
+
+require('./src/assets/scss/init.scss');
+
+exports.onClientEntry = () => {};
