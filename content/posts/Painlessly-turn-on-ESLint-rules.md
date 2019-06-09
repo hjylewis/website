@@ -3,7 +3,6 @@ title: Painlessly turn on ESLint rules
 date: "2019-06-08"
 template: "post"
 draft: false
-slug: "/posts/painlessly-turn-on-eslint-rules/"
 category: "Linting"
 tags:
   - "ESLint"
