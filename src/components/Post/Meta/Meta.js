@@ -8,7 +8,10 @@ const Meta = ({ date, slug }) => (
       Published {moment(date).format('MMMM D, YYYY')}
       {' • '}
       <a
-        href={`https://github.com/hjylewis/website/edit/master/content/${slug}`}
+        href={`https://github.com/hjylewis/website/edit/master/content/${slug.slice(
+          1,
+          slug.length - 1
+        )}.md`}
         target="_blank"
         rel="noopener noreferrer"
       >
