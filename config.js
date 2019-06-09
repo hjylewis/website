@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://hjylewis.com',
+  url: 'http://hjylewis.com',
   title: 'Blog by Henry Lewis',
   subtitle:
     'Developer passionate about tooling + developer experience. Web Engineer @ Sprout Social.',
