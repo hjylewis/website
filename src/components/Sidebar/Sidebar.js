@@ -8,19 +8,15 @@ import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 
 type Props = {
-  +isIndex: ?boolean,
+  +isIndex: ?boolean
 };
 
 type PureProps = Props & {
-  +data: Object,
+  +data: Object
 };
 
 export const PureSidebar = ({ data, isIndex }: PureProps) => {
-  const {
-    author,
-    copyright,
-    menu
-  } = data.site.siteMetadata;
+  const { author, copyright, menu } = data.site.siteMetadata;
 
   return (
     <div className={styles['sidebar']}>
@@ -52,19 +48,17 @@ export const Sidebar = (props: Props) => (
               photo
               bio
               contacts {
-                twitter
-                telegram
                 github
                 email
-                rss
-                vkontakte
+                linkedin
+                twitter
               }
             }
           }
         }
       }
     `}
-    render={(data) => <PureSidebar {...props} data={data}/>}
+    render={(data) => <PureSidebar {...props} data={data} />}
   />
 );
 

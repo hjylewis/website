@@ -1,38 +1,36 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://hjylewis.com',
+  title: 'Blog by Henry Lewis',
+  subtitle:
+    'Developer passionate about tooling + developer experience. Web Engineer @ Sprout Social.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
-      label: 'Articles',
+      label: 'Blog',
       path: '/'
     },
     {
-      label: 'About me',
-      path: '/pages/about'
+      label: 'Projects',
+      path: 'https://github.com/hjylewis?tab=repositories&type=source'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Experience',
+      path: 'https://www.linkedin.com/in/hjylewis'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Henry Lewis',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Developer passionate about tooling + developer experience. Web Engineer @ Sprout Social.',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'henry.jy.lewis@gmail.com',
+      twitter: 'hjylewis',
+      github: 'hjylewis',
+      linkedin: 'hjylewis'
     }
   }
 };

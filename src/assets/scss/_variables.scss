@@ -4,8 +4,8 @@
 
 // Colors
 $color-base: #222;
-$color-primary: #5D93FF;
-$color-secondary: #F7A046;
+$color-primary: #31BC6D;
+$color-secondary: #F79D84;
 
 $color-white: #FFF;
 $color-gray: lighten($color-base, 40%);
@@ -33,9 +33,9 @@ $button-border-radius: 20px;
 
 // Layout
 $layout-post-single-width: 945px;
-$layout-post-width: $layout-post-single-width - 305px;
+$layout-post-width: $layout-post-single-width - 280px;
 
-$layout-width: 1070px;
+$layout-width: 1060px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;
