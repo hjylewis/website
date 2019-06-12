@@ -113,9 +113,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-social-cards',
             options: {
+              title: {
+                color: 'white'
+              },
               meta: {
-                parts: ['Henry Lewis » ', { field: 'date', format: 'mmm d' }]
-              }
+                color: 'white',
+                parts: ['Henry Lewis » ', { field: 'date', format: 'mmmm d' }]
+              },
+              background: '#04395E'
             }
           }
         ]

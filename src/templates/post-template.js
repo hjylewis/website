@@ -17,6 +17,9 @@ const PostTemplate = ({ data }) => {
       description={metaDescription}
       meta={[
         <meta name="twitter:card" content="summary_large_image" />,
+        <meta name="twitter:title" content={postTitle} />,
+        <meta name="twitter:description" content={metaDescription} />,
+        <meta name="twitter:creator" content="@hjylewis" />,
         <meta name="twitter:image" content={`${siteUrl}${slug}twitter-card.jpg`} />
       ]}
     >
