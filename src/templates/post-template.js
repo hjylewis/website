@@ -4,20 +4,22 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 
 const PostTemplate = ({ data }) => {
-  const {
-    title: siteTitle,
-    subtitle: siteSubtitle
-  } = data.site.siteMetadata;
+  const { title: siteTitle, subtitle: siteSubtitle, url: siteUrl } = data.site.siteMetadata;
 
-  const {
-    title: postTitle,
-    description: postDescription
-  } = data.markdownRemark.frontmatter;
+  const { title: postTitle, description: postDescription } = data.markdownRemark.frontmatter;
+  const { slug } = data.markdownRemark.fields;
 
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout
+      title={`${postTitle} - ${siteTitle}`}
+      description={metaDescription}
+      meta={[
+        <meta name="twitter:card" content="summary_large_image" />,
+        <meta name="twitter:image" content={`${siteUrl}${slug}twitter-card.jpg`} />
+      ]}
+    >
       <Post post={data.markdownRemark} />
     </Layout>
   );
