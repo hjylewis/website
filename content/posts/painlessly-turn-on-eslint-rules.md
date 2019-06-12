@@ -11,6 +11,8 @@ tags:
 description: "Linting is a powerful way to catch bad code and enforce best practices. That said, turning a rule on for an existing project can be difficult. esplint is a tool that makes it easier to introduce new ESLint rules to large, legacy codebases by tracking, enforcing, and updating file and rule scoped warning counts."
 ---
 
+![Photo by Yung Chang on Unsplash](/media/yung-chang-108329-unsplash.jpg)
+
 [esplint](https://github.com/hjylewis/esplint) is an ESLint warning tracker to help introduce rules into a legacy code base.
 
 ### This tool will…
