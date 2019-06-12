@@ -1,5 +1,5 @@
 ---
-title: Painlessly turn on ESLint rules
+title: How to painlessly turn on ESLint rules
 date: "2019-06-08"
 template: "post"
 draft: false
