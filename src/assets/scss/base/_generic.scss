@@ -127,7 +127,11 @@ p {
 blockquote {
   padding: 0;
   font-style: italic;
-  text-align: center;
+}
+
+blockquote p {
+  border-left: solid $color-primary 5px;
+  padding-left: 10px;
 }
 
 figure {
