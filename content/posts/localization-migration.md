@@ -152,7 +152,7 @@ Once we feel more comfortable with the new system and developer experience, we s
 
 ### Deprecate old system / All new code should use the new system
 
-After we felt confident in the developer experience and scaling up the usage of the new system, we deprecate any new usage of the old system. We created some custom eslint rules and used the linting tool, esplint, to allow existing usages of the old system while blocking new usages. From this point on, Web engineers were expected to use the new system when writing new code.
+After we felt confident in the developer experience and scaling up the usage of the new system, we deprecate any new usage of the old system. We created some custom eslint rules and used the linting tool, [esplint](https://github.com/hjylewis/esplint), to allow existing usages of the old system while blocking new usages. From this point on, Web engineers were expected to use the new system when writing new code.
 
 Part of this Milestone involved the education of the entire web engineering team. We developed a FAQ and other educational documentation and presentations to aid developers using the new library. It’s easy to undervalue this step. This part of a migration is extremely important. It doesn’t matter how good your new system is if people don’t know to use it or how to use it or why it is better.
 
