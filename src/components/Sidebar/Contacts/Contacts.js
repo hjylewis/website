@@ -1,22 +1,15 @@
-// @flow
-import React from 'react';
-import { getContactHref, getIcon } from '../../../utils';
-import Icon from '../../Icon';
-import styles from './Contacts.module.scss';
+import React from "react";
+import { getContactHref, getIcon } from "../../../utils";
+import Icon from "../../Icon";
+import styles from "./Contacts.module.scss";
 
-type Props = {|
-  +contacts: {
-    [string]: string,
-  },
-|};
-
-const Contacts = ({ contacts }: Props) => (
-  <div className={styles['contacts']}>
-    <ul className={styles['contacts__list']}>
+const Contacts = ({ contacts }) => (
+  <div className={styles["contacts"]}>
+    <ul className={styles["contacts__list"]}>
       {Object.keys(contacts).map((name) => (
-        <li className={styles['contacts__list-item']} key={name}>
+        <li className={styles["contacts__listItem"]} key={name}>
           <a
-            className={styles['contacts__list-item-link']}
+            className={styles["contacts__listItemLink"]}
             href={getContactHref(name, contacts[name])}
             rel="noopener noreferrer"
             target="_blank"
