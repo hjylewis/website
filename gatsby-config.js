@@ -164,21 +164,12 @@ module.exports = {
                 path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
               }
             ) {
-              edges {
-                node {
+                nodes {
                   path
                 }
-              }
             }
           }
         `,
-        output: "/sitemap.xml",
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map((edge) => ({
-            url: site.siteMetadata.siteUrl + edge.node.path,
-            changefreq: "daily",
-            priority: 0.7,
-          })),
       },
     },
     {
