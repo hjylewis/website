@@ -1,23 +1,22 @@
-// @flow
-import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import { getContactHref } from '../../../utils';
-import styles from './Author.module.scss';
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import { getContactHref } from "../../../utils";
+import styles from "./Author.module.scss";
 
-export const PureAuthor = ({ data }: Object) => {
+export const PureAuthor = ({ data }) => {
   const { author } = data.site.siteMetadata;
 
   return (
-    <div className={styles['author']}>
-      <p className={styles['author__bio']}>
+    <div className={styles["author"]}>
+      <p className={styles["author__bio"]}>
         {author.bio}
         <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
+          className={styles["author__bioTwitter"]}
+          href={getContactHref("github", author.contacts.github)}
           rel="noopener noreferrer"
           target="_blank"
         >
-          <strong>{author.name}</strong> on Twitter
+          <strong>{author.name}</strong> on GitHub
         </a>
       </p>
     </div>
@@ -34,7 +33,7 @@ export const Author = () => (
               name
               bio
               contacts {
-                twitter
+                github
               }
             }
           }

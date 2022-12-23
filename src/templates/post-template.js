@@ -1,15 +1,21 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import Post from '../components/Post';
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Post from "../components/Post";
 
 const PostTemplate = ({ data }) => {
-  const { title: siteTitle, subtitle: siteSubtitle, url: siteUrl } = data.site.siteMetadata;
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    url: siteUrl,
+  } = data.site.siteMetadata;
 
-  const { title: postTitle, description: postDescription } = data.markdownRemark.frontmatter;
+  const { title: postTitle, description: postDescription } =
+    data.markdownRemark.frontmatter;
   const { slug } = data.markdownRemark.fields;
 
-  const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
+  const metaDescription =
+    postDescription !== null ? postDescription : siteSubtitle;
 
   return (
     <Layout
@@ -20,7 +26,10 @@ const PostTemplate = ({ data }) => {
         <meta name="twitter:title" content={postTitle} />,
         <meta name="twitter:description" content={metaDescription} />,
         <meta name="twitter:creator" content="@hjylewis" />,
-        <meta name="twitter:image" content={`${siteUrl}${slug}twitter-card.jpg`} />
+        <meta
+          name="twitter:image"
+          content={`${siteUrl}${slug}twitter-card.jpg`}
+        />,
       ]}
     >
       <Post post={data.markdownRemark} />
